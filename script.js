@@ -8,7 +8,7 @@ require([
   "dojo/domReady!"
 ], function(Map, MapView, FeatureLayer, SimpleMarkerSymbol, SimpleRenderer, PopupTemplate) {
 
-  // Creating a FeatureLayer for traffic collisions
+  // Create a FeatureLayer for traffic collisions
   var fl = new FeatureLayer({
     url: "https://services2.arcgis.com/zNjnZafDYCAJAbN0/arcgis/rest/services/Traffic_Collisions/FeatureServer",
     outFields: ["*"],
@@ -31,7 +31,7 @@ require([
       symbol: new SimpleMarkerSymbol({
         style: "square",
         color: "blue",
-        size: 8, // You can adjust the size as needed
+        size: 8,
         outline: {
           color: "white",
           width: 1
